@@ -90,10 +90,35 @@ class _ButtonsView extends StatelessWidget {
                   iconColor: const MaterialStatePropertyAll(Colors.white),
                 ),
               ),
-              const CustomButtons()
+              const CustomButtons(),
+              const GradientButton()
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class GradientButton extends StatelessWidget {
+  const GradientButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        child: Ink(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.transparent, colors.primary],
+              ),
+            ),
+            child: const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              child: Text('Gradient Button'),
+            )),
       ),
     );
   }
