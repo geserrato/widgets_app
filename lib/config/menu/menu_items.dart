@@ -38,4 +38,9 @@ const appMenuItems = <MenuItem>[
     link: '/snackbars',
     icon: Icons.refresh_rounded,
   ),
+  MenuItem(
+      title: 'Animated container',
+      subtitle: 'Staful widget animado',
+      link: '/animated',
+      icon: Icons.animation),
 ];
