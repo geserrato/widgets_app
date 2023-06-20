@@ -48,4 +48,9 @@ const appMenuItems = <MenuItem>[
       subtitle: 'UI controles',
       link: '/ui-controls',
       icon: Icons.car_repair),
+  MenuItem(
+      title: 'Introducción a Aplicación',
+      subtitle: 'Tutorial',
+      link: '/tutorial',
+      icon: Icons.accessibility_new_rounded),
 ];
