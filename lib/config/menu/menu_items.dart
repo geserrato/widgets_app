@@ -43,4 +43,9 @@ const appMenuItems = <MenuItem>[
       subtitle: 'Staful widget animado',
       link: '/animated',
       icon: Icons.animation),
+  MenuItem(
+      title: 'UI Controls',
+      subtitle: 'UI controles',
+      link: '/ui-controls',
+      icon: Icons.car_repair),
 ];
